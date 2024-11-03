@@ -4,16 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>about us </title>
+    <title>About Us</title>
+    <style>
+        /* Navigation styling */
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* About section styling */
+        #about {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
     <section id="about">
         <h2>About Us</h2>
         <p>We are passionate food lovers who enjoy exploring new recipes and cuisines.</p>
     </section>
 
-
 </body>
 </html>
-
-

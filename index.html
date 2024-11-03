@@ -3,42 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekti i Orgesit food</title>
+    <title>Projekti i Orgesit Food</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        nav ul{
+        /* Header styling */
+        nav ul {
             display: flex;
             justify-content: flex-end;
+            list-style-type: none;
+            background-color: #333;
+            padding: 10px;
         }
-        nav ul li a{
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
             color: white;
-            font-size: 25px;
+            font-size: 18px;
             font-weight: bold;
             text-decoration: none;
-            float: right;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container for images and text */
+        .recipe-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .recipe-card {
+            text-align: center;
+            width: 45%;
+        }
+
+        .recipe-card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-     <header>
-        <h1>Welcome to Food website</h1>
+    <header>
+        <h1>Welcome to Food Website</h1>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-         <h3>Pica</h3>
-         <img src="img/pica foto.jpg" alt="">
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <h3>Pica</h3>
+                <img src="img/pica foto.jpg" alt="Pica Image">
             </div>
             
             <div class="recipe-card">
                 <h3>Burger</h3>
-            <img src="img/burger.jpg">
+                <img src="img/burger.jpg" alt="Burger Image">
             </div>
+        </div>
     </main>
-  
 </body>
 </html>
