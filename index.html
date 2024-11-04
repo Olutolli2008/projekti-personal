@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to our restaurant, where your culinary journey begins.">
+    <meta name="keywords" content="restaurant, food, menu, dining">
     <title>Projekti i Orgesit Food</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Navigation Bar */
         nav ul {
             display: flex;
             justify-content: flex-end;
@@ -19,26 +20,25 @@
         }
         nav ul li a {
             color: white;
-            font-size: 1.2em; /* Increased font size to match button style */
+            font-size: 1.2em;
             font-weight: bold;
             text-decoration: none;
-            padding: 15px 30px; /* Same padding for uniform size */
-            border-radius: 8px; /* Rounded corners */
-            transition: background-color 0.3s ease; /* Transition effects */
-            display: inline-block; /* Makes the links behave like buttons */
+            padding: 15px 30px; 
+            border-radius: 8px; 
+            transition: background-color 0.3s ease; 
+            display: inline-block; 
         }
         nav ul li a:hover {
-            background-color: #555; /* Darker shade on hover */
-            text-decoration: underline; /* Underline effect on hover */
+            background-color: #555; 
+            text-decoration: underline; 
         }
 
-        /* Welcome Section */
         .welcome-section {
             text-align: center;
             padding: 50px 20px;
-            background-color: #f9f9f9; /* Light background for the welcome section */
-            margin: 20px 0; /* Space around the section */
-            border-radius: 8px; /* Rounded corners */
+            background-color: #f9f9f9; 
+            margin: 20px 0; 
+            border-radius: 8px; 
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
         }
         .welcome-section h2 {
@@ -51,15 +51,27 @@
             color: #333;
             margin-bottom: 30px; 
         }
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d32f2f;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .home-button:hover {
+            background-color: #b71c1c;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Food Website </h1>
+        <h1>Welcome to Food Website</h1>
         <h1>Made by Orges Lutolli</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li> <!-- Home Button -->
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="menu.html">Menu</a></li>
@@ -67,17 +79,10 @@
         </nav>
     </header>
 
-    <!-- Welcome Section -->
     <div class="welcome-section">
         <h2>Welcome to Our Restaurant!</h2>
         <p>Your culinary journey begins here. Enjoy our exquisite dishes crafted with love and the freshest ingredients. Join us for a delightful dining experience!</p>
         <a href="menu.html" class="home-button">View Menu</a>
     </div>
-
 </body>
 </html>
-
-</html>
-
-
-
