@@ -6,7 +6,7 @@
     <title>Projekti i Orgesit Food</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
+        /* Navigation Bar */
         nav ul {
             display: flex;
             justify-content: flex-end;
@@ -19,58 +19,65 @@
         }
         nav ul li a {
             color: white;
-            font-size: 18px;
+            font-size: 1.2em; /* Increased font size to match button style */
             font-weight: bold;
             text-decoration: none;
+            padding: 15px 30px; /* Same padding for uniform size */
+            border-radius: 8px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Transition effects */
+            display: inline-block; /* Makes the links behave like buttons */
         }
         nav ul li a:hover {
-            text-decoration: underline;
+            background-color: #555; /* Darker shade on hover */
+            text-decoration: underline; /* Underline effect on hover */
         }
 
-       
-        .recipe-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px 0;
-        }
-
-        .recipe-card {
+        /* Welcome Section */
+        .welcome-section {
             text-align: center;
-            width: 45%;
+            padding: 50px 20px;
+            background-color: #f9f9f9; /* Light background for the welcome section */
+            margin: 20px 0; /* Space around the section */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
         }
-
-        .recipe-card img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+        .welcome-section h2 {
+            font-size: 2.5em; 
+            color: #d32f2f; 
+            margin-bottom: 20px; 
+        }
+        .welcome-section p {
+            font-size: 1.2em; 
+            color: #333;
+            margin-bottom: 30px; 
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Food Website</h1>
+        <h1>Welcome to Food Website </h1>
+        <h1>Made by Orges Lutolli</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li> <!-- Home Button -->
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="recipe-container">
-            <div class="recipe-card">
-                <h3>Pica</h3>
-                <img src="img/pica foto.jpg" alt="Pica Image">
-            </div>
-            
-            <div class="recipe-card">
-                <h3>Burger</h3>
-                <img src="img/burger.jpg" alt="Burger Image">
-            </div>
-        </div>
-    </main>
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+        <h2>Welcome to Our Restaurant!</h2>
+        <p>Your culinary journey begins here. Enjoy our exquisite dishes crafted with love and the freshest ingredients. Join us for a delightful dining experience!</p>
+        <a href="menu.html" class="home-button">View Menu</a>
+    </div>
+
 </body>
 </html>
+
+</html>
+
+
+

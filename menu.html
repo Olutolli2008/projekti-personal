@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column; /* Added to allow stacking of nav and menu */
+    }
+
+    /* Navigation Bar */
+    nav {
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+    }
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-container {
+      max-width: 700px;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 20px; /* Added margin for spacing from nav */
+    }
+
+    .menu-header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .menu-header h1 {
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+
+    .menu-section {
+      padding: 20px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .menu-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+
+    .menu-item h2 {
+      font-size: 1.1em;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .menu-item p {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .menu-item .price {
+      font-size: 1.1em;
+      color: #333;
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="menu.html">Menu</a></li>
+  </ul>
+</nav>
+
+<div class="menu-container">
+  <div class="menu-header">
+    <h1>Food Menu</h1>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-item">
+      <img src="img/margherita.jpg" alt="Margherita Pizza">
+      <div>
+        <h2>Margherita Pizza</h2>
+        <p>Classic cheese and tomato pizza</p>
+      </div>
+      <div class="price">$10.00</div>
+    </div>
+    <div class="menu-item">
+      <img src="img/carbonara.jpg" alt="Spaghetti Carbonara">
+      <div>
+        <h2>Spaghetti Carbonara</h2>
+        <p>Pasta with creamy sauce and bacon</p>
+      </div>
+      <div class="price">$12.00</div>
+    </div>
+    <div class="menu-item">
+      <img src="img/salad.jpg" alt="Caesar Salad">
+      <div>
+        <h2>Caesar Salad</h2>
+        <p>Fresh lettuce, parmesan, croutons, and dressing</p>
+      </div>
+      <div class="price">$8.00</div>
+    </div>
+    <div class="menu-item">
+      <img src="img/dyner.jpg" alt="Grilled Salmon">
+      <div>
+        <h2>Grilled Salmon</h2>
+        <p>Served with a side of vegetables</p>
+      </div>
+      <div class="price">$15.00</div>
+    </div>
+    <div class="menu-item">
+      <img src="img/Hamburger.jpg" alt="Cheeseburger">
+      <div>
+        <h2>Cheeseburger</h2>
+        <p>Beef patty with cheese, lettuce, and tomato</p>
+      </div>
+      <div class="price">$9.00</div>
+    </div>
+    <div class="menu-item">
+      <img src="img/chocolate cake.jpg" alt="Chocolate Cake">
+      <div>
+        <h2>Chocolate Cake</h2>
+        <p>Rich chocolate dessert</p>
+      </div>
+      <div class="price">$6.00</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
