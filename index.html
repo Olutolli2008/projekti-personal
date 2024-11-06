@@ -8,12 +8,14 @@
     <title>Projekti i Orgesit Food</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Navigation bar styles */
         nav ul {
             display: flex;
             justify-content: flex-end;
             list-style-type: none;
             background-color: #333;
             padding: 10px;
+            margin: 0;
         }
         nav ul li {
             margin-left: 20px;
@@ -33,6 +35,7 @@
             text-decoration: underline; 
         }
 
+        /* Welcome section styles */
         .welcome-section {
             text-align: center;
             padding: 50px 20px;
@@ -51,39 +54,53 @@
             color: #333;
             margin-bottom: 30px; 
         }
+
+        /* Button styles */
         .home-button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 15px 30px; 
             background-color: #d32f2f;
             color: white;
-            border-radius: 5px;
+            border-radius: 8px; 
             text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
             transition: background-color 0.3s ease;
+            margin-top: 20px; /* Space between text and button */
         }
         .home-button:hover {
             background-color: #b71c1c;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="menu.html">Food Menu</a></li>
+            <li><a href="cake.html">Cake Menu</a></li>
+            <li><a href="cafe.html">Cafe Menu</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
     <header>
         <h1>Welcome to Food Website</h1>
-        <h1>Made by Orges Lutolli</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="menu.html"> FoodMenu</a></li>
-                <li><a href ="cake.html">Cake Menu</a></li>
-            </ul>
-        </nav>
+        <h2>Made by Orges Lutolli</h2>
     </header>
 
+    <!-- Welcome Section -->
     <div class="welcome-section">
         <h2>Welcome to Our Restaurant!</h2>
-        <p>Welcome to My Restaurant the food is super good and we have cake too we hope you enjoy and thanks for visisting this Website</p>
+        <p>Welcome to My Restaurant, where the food is amazing and we have cake too! We hope you enjoy your visit and thanks for checking out this website.</p>
         <a href="menu.html" class="home-button">View Menu</a>
     </div>
+
 </body>
 </html>
+
