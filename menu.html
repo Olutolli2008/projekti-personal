@@ -28,21 +28,25 @@
       background-color: #333;
       padding: 10px 0;
     }
+
     nav ul {
       display: flex;
       justify-content: flex-end;
       list-style-type: none;
       padding: 0;
     }
+
     nav ul li {
       margin-left: 20px;
     }
+
     nav ul li a {
       color: white;
       font-size: 18px;
       font-weight: bold;
       text-decoration: none;
     }
+
     nav ul li a:hover {
       text-decoration: underline;
     }
@@ -54,7 +58,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       overflow: hidden;
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
     .menu-header {
@@ -62,6 +66,11 @@
       color: #fff;
       padding: 20px;
       text-align: center;
+    }
+
+    .menu-section img:hover {
+      transition: 2s;
+      transform: scale(1.1);
     }
 
     .menu-header h1 {
@@ -108,6 +117,22 @@
       font-size: 1.1em;
       color: #333;
       margin-left: auto;
+      margin-right: 20px;
+    }
+
+    .order-btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .order-btn:hover {
+      background-color: #555;
     }
   </style>
 </head>
@@ -118,7 +143,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="menu.html"> Food Menu</a></li>
+    <li><a href="menu.html">Food Menu</a></li>
     <li><a href="cake.html">Cake Menu</a></li>
     <li><a href="cafe.html">Cafe Menu</a></li>
   </ul>
@@ -131,13 +156,15 @@
 
   <div class="menu-section">
     <div class="menu-item">
-      <img src="img/margherita.jpg" alt="pica Margarita">
+      <img src="img/margherita.jpg" alt="Pizza Margarita">
       <div>
         <h2>Margherita Pizza</h2>
         <p>Classic cheese and tomato pizza</p>
       </div>
       <div class="price">$10.00</div>
+      <button class="order-btn">Order</button>
     </div>
+
     <div class="menu-item">
       <img src="img/carbonara.jpg" alt="Spaghetti Carbonara">
       <div>
@@ -145,7 +172,9 @@
         <p>Pasta with creamy sauce and bacon</p>
       </div>
       <div class="price">$12.00</div>
+      <button class="order-btn">Order</button>
     </div>
+
     <div class="menu-item">
       <img src="img/salad.jpg" alt="Caesar Salad">
       <div>
@@ -153,15 +182,19 @@
         <p>Fresh lettuce, parmesan, croutons, and dressing</p>
       </div>
       <div class="price">$8.00</div>
+      <button class="order-btn">Order</button>
     </div>
+
     <div class="menu-item">
-      <img src="img/dyner.jpg" alt="Dyner">
+      <img src="img/dyner.jpg" alt="Grilled Salmon">
       <div>
         <h2>Grilled Salmon</h2>
         <p>Served with a side of vegetables</p>
       </div>
       <div class="price">$15.00</div>
+      <button class="order-btn">Order</button>
     </div>
+
     <div class="menu-item">
       <img src="img/Hamburger.jpg" alt="Hamburger">
       <div>
@@ -169,46 +202,57 @@
         <p>Beef patty with cheese, lettuce, and tomato</p>
       </div>
       <div class="price">$9.00</div>
+      <button class="order-btn">Order</button>
     </div>
+
     <div class="menu-item">
       <img src="img/Waffle.jpg" alt="Waffle">
       <div>
         <h2>Waffle</h2>
-        <p>Golden waffle topped with whipped cream and fresh strawberries.</p>
+        <p>Golden waffle topped with whipped cream and fresh strawberries</p>
       </div>
       <div class="price">$6.00</div>
+      <button class="order-btn">Order</button>
     </div>
+
     <div class="menu-item">
       <img src="img/tacos.jpg" alt="Tacos">
       <div>
         <h2>Tacos</h2>
-        <p>Soft tortillas filled with beef, lettuce, and salsa.</p>
+        <p>Soft tortillas filled with beef, lettuce, and salsa</p>
       </div>
       <div class="price">$10.00</div>
+      <button class="order-btn">Order</button>
     </div>
+
     <div class="menu-item">
       <img src="img/fries.jpg" alt="Fries">
       <div>
         <h2>Fries</h2>
-        <p>Crispy golden fries served with ketchup.</p>
+        <p>Crispy golden fries served with ketchup</p>
       </div>
       <div class="price">$5.00</div>
+      <button class="order-btn">Order</button>
     </div>
+
     <div class="menu-item">
-      <img src="img/sushi.jpg" alt="Sushi">
+      <img src="img/sushi.jpg" alt="Sushi Platter">
       <div>
         <h2>Sushi Platter</h2>
-        <p>Assorted sushi rolls with fresh fish and vegetables.</p>
+        <p>Assorted sushi rolls with fresh fish and vegetables</p>
       </div>
       <div class="price">$20.00</div>
+      <button class="order-btn">Order</button>
     </div>
+
     <div class="menu-item">
       <img src="img/Makarona.jpg" alt="Makarona">
       <div>
         <h2>Makarona</h2>
-        <p>Pasta served with a rich tomato sauce and herbs.</p>
+        <p>Pasta served with a rich tomato sauce and herbs</p>
       </div>
       <div class="price">$7.00</div>
+      <button class="order-btn">Order</button>
     </div>
   </div>
 </div>
